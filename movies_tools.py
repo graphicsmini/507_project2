@@ -10,6 +10,8 @@ class Movie:
     def __str__(self):
         return "{} | {}".format(self.title, self.rating)
 
+# Define a function that processes reading csv file and putting the each row into the list.
+
 def process(file):
     with open(file, "r") as f:
     	reader = csv.reader(f)
