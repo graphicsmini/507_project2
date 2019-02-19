@@ -3,13 +3,13 @@
 As you can see in requirements.txt file, you need to install flask. to run this whole program.
 You will see two python files, which is 'SI507_project2.py' and 'movies_tools.py'. The file 'movies_tools.py' is essential source code for running 'SI507_project2.py' file.
 
-###[WHAT 'movies_tools.py' CONTAINS]
+### [WHAT 'movies_tools.py' CONTAINS]
 1. It has class named **Movie** which brings movie title, and movie rating.
 2. Also, class Movie has string method that shows title, and rating of the movie. 
 3. It has function named **process**. This opens csv file, read, and put the each row into the list.
 
 
-###[WHAT 'SI507_project2.py' CONTAINS]
+### [WHAT 'SI507_project2.py' CONTAINS]
 1. It has **flask** application which allow uers to go to the routes at the following paths.
 2. There are total two routes.
   - http://localhost:5000/
@@ -23,7 +23,7 @@ You will see two python files, which is 'SI507_project2.py' and 'movies_tools.py
     >Slam | 3.4
     >Mississippi Mermaid | NA
 
-###[HOW TO RUN]
+### [HOW TO RUN]
 1. Open terminal or any command prompt you have.
 To run this program in the virtual environment, first of all, we are going to make and activate the virtual environment.
 2. Type: python3 -m venv project1-env
