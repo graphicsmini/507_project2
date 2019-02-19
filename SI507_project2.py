@@ -1,37 +1,22 @@
 # Import statements necessary
 from flask import Flask, render_template
-import movies_tools 
-import csv
+from movies_tools import *
+
 
 # Set up application
 app = Flask(__name__)
-
-
-# Open movies_clean.csv file
-with open("movies_clean.csv", "r") as f:
-	reader = csv.reader(f)
-	data = []
-	for i in reader:
-		data.append(i)
-
+data = None
 
 # Routes
 @app.route('/')
 def home():
-
-    return '<h1> <number> movies recorded. </h1>'
+    return '<h1> {} movies recorded. </h1>'.format(len(data))
 
 @app.route('/movies/ratings/')
 def movie_title_rating():
-    title = Movie(number)
-    rating = Movie(rating)
 
-    return render_template('values.html',movie_title=title,movie_rating=rating)
-
-
-
-
-
+    return render_template('ratings.html', masterlist = data[1:7] )
 
 if __name__ == '__main__':
+    data = process("movies_clean.csv")
     app.run()
