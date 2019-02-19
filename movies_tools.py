@@ -5,7 +5,7 @@ import csv
 class Movie:
     def __init__(self, row):
         self.title = row[0]
-        self.rating = row[6]
+        self.rating = row[14]
 
     def __str__(self):
         return "{} | {}".format(self.title, self.rating)
