@@ -13,9 +13,9 @@ You will see two python files, which is 'SI507_project2.py' and 'movies_tools.py
 1. It has **flask** application which allow uers to go to the routes at the following paths.
 2. There are total two routes.
   - http://localhost:5000/
-    *You will see "3146 movies recorded."*
+    - *You will see "3146 movies recorded."*
   - http://localhost:5000/movies/ratings/
-    *You will see*
+    - *You will see*
     > * The Land Girls | 6.1
     > * First Love, Last Rites | 6.9
     > * I Married a Strange Person | 6.8
